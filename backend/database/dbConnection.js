@@ -5,7 +5,7 @@ export const dbConnection = () => {
     .connect(process.env.MONGO_URI, {
       dbName: "MERN_STACK_EVENT_PROJECT",
       //useNewUrlParser: true,
-      useUnifiedTopology: true,
+      //useUnifiedTopology: true,
     })
     .then(() => {
       console.log("Connected to database!");
