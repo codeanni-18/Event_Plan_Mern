@@ -4,7 +4,7 @@ export const dbConnection = () => {
   mongoose
     .connect(process.env.MONGO_URI, {
       dbName: "MERN_STACK_EVENT_PROJECT",
-      useNewUrlParser: true,
+      //useNewUrlParser: true,
       useUnifiedTopology: true,
     })
     .then(() => {
